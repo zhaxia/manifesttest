@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/openembedded/" name="oe"/>
+  <remote fetch="https://github.com/kergoth/" name="kergoth"/>
+
+  <default remote="oe" revision="master"/>
+
+  <project name="bitbake" path="sources/bitbake"/>
+  <project name="oe-core" path="sources/oe-core"/>
+
+  <project remote="kergoth" name="oe-repo-build" path="sources/scripts">
+    <copyfile dest="Makefile" src="repo.mk"/>
+  </project>
+</manifest>
