@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/openembedded/" name="oe"/>
-  <remote fetch="https://github.com/kergoth/" name="kergoth"/>
-
-  <default remote="oe" revision="master"/>
-
-  <project name="bitbake" path="sources/bitbake"/>
-  <project name="oe-core" path="sources/oe-core"/>
-
-  <project remote="kergoth" name="oe-repo-build" path="sources/scripts">
-    <copyfile dest="Makefile" src="repo.mk"/>
-  </project>
+    <remote fetch="https://github.com/" name="origin"/>
+    <default remote="origin" revision="master"/>
+ 
+    <project name="local/freertos" path="aws/amazon-freertos" revision="7d4ead242064e9ad2ddf11001deb6132d3444700">
+        <copyfile dest="README.txt" src="README.md"/>
+    </project>
+    <project name="local/lwip" path="dreamcat4/lwip" revision="master"/>
 </manifest>
