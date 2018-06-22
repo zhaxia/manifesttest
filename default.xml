@@ -3,8 +3,8 @@
     <remote fetch="https://github.com/" name="origin"/>
     <default remote="origin" revision="master"/>
  
-    <project name="local/freertos" path="aws/amazon-freertos" revision="7d4ead242064e9ad2ddf11001deb6132d3444700">
-        <copyfile dest="README.txt" src="README.md"/>
+    <project path="local/freertos" name="aws/amazon-freertos" revision="7d4ead242064e9ad2ddf11001deb6132d3444700">
+        <copyfile src="README.md" dest="README.txt"/>
     </project>
-    <project name="local/lwip" path="dreamcat4/lwip" revision="master"/>
+    <project path="local/lwip" name="dreamcat4/lwip" revision="master"/>
 </manifest>
